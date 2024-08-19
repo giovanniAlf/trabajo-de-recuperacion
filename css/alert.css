@@ -1,0 +1,119 @@
+
+.alert {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.alert__icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.alert__message {
+    flex: 1;
+}
+
+.alert__close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: inherit;
+}
+
+/* Modificadores */
+.alert--info {
+    background-color: #e7f0ff;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    text-decoration: underline;
+}
+
+
+.alert--success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.alert--success:hover {
+    background-color: #00ff3c;
+    border-color: #000000;
+    transition: 6s;
+    text-decoration: dashed;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+}
+
+
+
+
+.alert__close-btn:hover {
+    color: #333;
+}
+
+.alert--info--rojo{
+    background-color: rgb(138, 8, 8);
+    color: white;
+}
+.alert--info--rojo:hover{
+
+    background-color: #856404;
+    /* color: black; */
+    transition: 3s;
+    display: flex;
+    text-align: end;
+
+
+
+
+}
+
+.alert--info_morada{
+
+    background-color: purple;
+    text-decoration: overline;
+
+}
+
+.alert--info_morada:hover{
+
+    text-decoration: underline;
+    transition: 3s;
+    text-align: center;
+    align-content: center;
+    background-color: #5700f9;
+    color: white;
+
+
+}
+.alert--info--azulclaro{
+    background-color: rgb(0, 136, 255);
+        
+}
+.alert--info--azulclaro:hover{
+
+    text-decoration: underline;
+    transition: 3s;
+    text-align: end;
+    align-content: center;
+    background-color: #8dd6e0;
+    color: rgb(255, 0, 0);
+    /* __ el scalex(-1) cuenta como un componente de texto invertido profe */
+    transform: scaleX(-1);     
+    cursor: pointer;
+
+}

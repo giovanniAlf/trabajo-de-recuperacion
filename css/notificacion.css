@@ -1,0 +1,136 @@
+
+
+.notification-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    /* background-color: #ffc107; */
+
+}
+.linea-ancha{
+
+
+    width: 5000px;
+    height: 6px;
+    background-color: black;
+
+
+
+}
+.notification {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    position: relative;
+}
+
+.notification__icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.notification__message {
+    margin: 0;
+}
+
+.notification--base {
+    background-color: #28a745; 
+}
+
+.notification--Hola-azul{
+
+    background-color: blue;
+
+}
+
+.notification__message-hover-shadownegro-letraverde:hover{
+    
+        box-shadow: 50px 10px 5px black;
+       color: green;
+
+}
+
+.notification--Chao{
+
+    background-color: red;
+
+}
+.notification__icon-underline{
+
+    text-decoration: underline;
+
+
+
+}
+.notification__message-hover-fondovioleta-overline-letraazul:hover{
+
+background-color: violet;
+text-decoration: overline;
+color: blue;
+
+}
+.notification--Nosvemos-brown{
+
+    background-color: brown;
+
+
+}
+.notification__icon-hover-letra-negra-fondo-blanco:hover{
+
+    color: black;
+    background-color: white;
+
+}
+.notification__message-underline-hover-overline-letra-verde-fondo-morado{
+
+    text-decoration: underline;
+
+
+}
+.notification__message-underline-hover-overline-letra-verde-fondo-morado:hover{
+
+    text-decoration: overline;
+    color: green;
+    background-color: purple;
+
+}
+.notification--missu-no-fondo{
+
+    background-color: transparent;
+}
+.notification__icon-hover-overline-hover-fondo-verde:hover{
+
+    text-decoration: overline;
+    background-color: green;
+
+
+}
+.notification__message-hover-fondo-negro-letra-amarillo:hover{
+
+    background-color: black;
+    color: yellow;
+
+
+
+}
+.notification--hateu-fondo-verde-shadow-naranja{
+
+    background-color: green;
+    box-shadow: 50px 10px 5px orange;
+}
+.notification__icon-hover-transition-fondo-negro:hover{
+
+background-color: black;
+transition: 5s;
+
+}
+.notification__message-hover-letra-azul{
+
+color: blue;
+
+
+}

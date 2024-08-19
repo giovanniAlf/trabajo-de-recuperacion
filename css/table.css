@@ -1,0 +1,25 @@
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__header, .table__data {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table__head {
+    background-color: #f4f4f4;
+}
+
+
+.table--striped .table__row:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.table__row:hover {
+    background-color: #e2e2e2;
+}

@@ -1,0 +1,124 @@
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+}
+
+.dropdown__button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown__button-rojo-hover-fondo-verde-transicion{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color:red;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.dropdown__button-rojo-hover-fondo-verde-transicion:hover{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color:green;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.dropdown__button-morado-overline-hover-letra-amarillo{
+
+    
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color:purple;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: overline;
+    transition: background-color 0.3s;
+
+}
+.dropdown__button-morado-overline-hover-letra-amarillo:hover{
+
+
+color: yellow;
+
+
+}
+.dropdown__item-fondo-negro-letra-purple-overline{
+
+    display: block;
+    padding: 10px;
+    color: purple;
+    background-color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+
+
+}
+.dropdown__item-fondo-azul-transition-underline-shadow-amarilla{
+
+    
+   display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    text-decoration: none;
+    text-decoration: underline;
+    box-shadow: 50px 10px 5px yellow;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+
+
+}
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1;
+    margin-top: 5px;
+}
+
+.dropdown__item {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.dropdown__item:last-child {
+    border-bottom: none;
+}
+
+.dropdown__item:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown__content {
+    display: block;
+}
+
+.dropdown__button:hover {
+    background-color: #0056b3;
+}

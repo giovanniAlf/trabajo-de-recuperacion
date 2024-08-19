@@ -1,0 +1,28 @@
+
+
+.navbar {
+    padding: 10px 20px; 
+    background-color: #333;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__item {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.navbar__item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar--dark {
+    background-color: #444;
+}

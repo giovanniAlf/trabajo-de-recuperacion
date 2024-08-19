@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+.card__body-base{
+
+    background-color: white;
+}
+.card__body-base:hover{
+
+    background-color: aqua;
+    color: black;
+    transition: 4s;
+}
+.card__body-primary{
+
+    background-color: white;
+}
+.card__body-primary:hover{
+
+    background-color: rgb(0, 0, 0);
+    color: black;
+    /* transition: 3s; */
+}
+.card__footer-primary:hover{
+
+    background-color: black;
+    /* transition: 3; */
+
+}
+.card__header-primary:hover{
+
+    background-color: black;
+    /* transition: 3; */
+
+}
+
+.card__body-secondary{
+
+    background-color: white;
+}
+.card__body-secondary:hover{
+
+    background-color: rgb(0, 0, 0);
+    color: black;
+    transition: 4s;
+    text-align: end;
+}
+
+.card__body-terciary{
+
+    background-color: white;
+    text-align: end;
+}
+.card__footer-terciary:hover{
+
+    background-color: rgb(0, 153, 255);
+    color: rgb(255, 255, 255);
+    transition: 4s;
+}
+.card__header-terciary:hover{
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 3s;
+}
+
+.card__body-cuaternary{
+
+    background-color: white;
+}
+.card__footer-cuaternary:hover{
+
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 4s;
+}
+
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card__header-base {
+    background-color: #00ffbf;
+    padding: 10px;
+}
+.card__footer-base{
+
+    text-align: end;
+    text-decoration: underline;
+    color: #9d00ff;
+
+}
+
+.card__header-base:hover {
+    background-color: #09ff00;
+    padding: 10px;
+    transition: 3s;
+    text-align: end;
+}
+
+.card__header-primary, .card__footer-primary {
+    background-color: #9d00ff;
+    padding: 10px;
+}
+.card__header-secondary, .card__footer-secondary {
+    background-color: #9dff00;
+    padding: 10px;
+}
+.card__header-terciary, .card__footer-terciary {
+    background-color: #1eff00;
+    padding: 10px;
+}
+.card__header-cuaternary, .card__footer-cuaternary {
+    background-color: #0bc1dd;
+    padding: 10px;
+}
+
+
+
+.card__header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card__body {
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    flex: 1; 
+}
+
+
+.card--base {
+    border-left: 4px solid #007BFF;
+    background-color: black;
+}
+.card--primaria{
+    /* border-left: 4px solid #007BFF; */
+    background-color: blue;
+}
+
+.card--secundaria {
+    /* border-left: 4px solid #6c757d; */
+    background-color: green;
+  
+}
+
+.card--terciaria {
+    /* border: 2px solid #ddd; */
+    background-color: rgb(0, 255, 255);
+}
+
+.card--cuaternaria {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #6c757d;
+}
+.card__footer-cuaternary:hover{
+
+    color: #9d00ff;
+    background-color: bisque;
+    text-decoration: overline;
+    text-align: center;
+
+
+}
+.card__header-cuaternary:hover{
+
+    background-color: brown;
+    text-decoration: overline;
+    text-align: end;
+    color: #1eff00;
+
+}
