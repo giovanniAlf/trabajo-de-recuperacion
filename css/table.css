@@ -23,3 +23,72 @@
 .table__row:hover {
     background-color: #e2e2e2;
 }
+.table__body-fondo-verde-color-negro-shadow-negro{
+
+    background-color: green;
+    color: black;
+    box-shadow: 5px 5px 5px black;
+
+}
+.table__header-fondo-amarillos-hover-fondo-blue-color-purple-fontsize-7px{
+
+background-color: yellow;
+
+}
+.table__header-fondo-amarillos-hover-fondo-blue-color-purple-fontsize-7px:hover{
+
+    background-color: blue;
+    color: purple;
+    font-size: 7px;
+
+
+}
+.table__header-fondo-verde-underline-hover-fondo-rojo-color-negro-fontfamily-transition{
+
+
+
+    background-color: green;
+    text-decoration: underline;
+}
+.table__header-fondo-verde-underline-hover-fondo-rojo-color-negro-fontfamily-transition:hover{
+
+background-color: red;
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+transition: 10s;
+
+}
+.table__header-fondo-tranparente-underline-hover-fondo-center-rojo-color-negro-fontsize-transition-shadow{
+
+    background-color: transparent;
+    text-decoration: underline;
+
+
+}
+.table__header-fondo-tranparente-underline-hover-fondo-center-rojo-color-negro-fontsize-transition-shadow:hover{
+
+
+    background-color: red;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 3s;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+
+}
+.table__header-fondo-rojo-overline-hover-fondo-transparente-end-color-azul-fontsize-fontfamily-transition{
+
+    background-color: red;
+    text-decoration: overline;
+
+}
+.table__header-fondo-rojo-overline-hover-fondo-transparente-end-color-azul-fontsize-fontfamily-transition:hover{
+
+
+    background-color: transparent;
+    text-align: end;
+    color: blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 6px;
+    transition: 4s;
+}

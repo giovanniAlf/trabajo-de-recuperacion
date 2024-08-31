@@ -87,6 +87,87 @@ color: yellow;
 
 
 }
+.dropdown__buttondropdown__button-fondo-verde-overline-hover-letra-azul-fondo-negro-underline-final{
+    background-color: green; 
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* background-color:purple; */
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: overline;
+    transition: background-color 0.3s;
+}
+.dropdown__buttondropdown__button-fondo-verde-overline-hover-letra-azul-fondo-negro-underline-final:hover{
+
+color: blue;
+background-color: black;
+text-align: end;
+
+
+
+}
+.dropdown__item-color-amarilo-hover-fondo-negro-underline-end{
+
+    display: block;
+    padding: 10px;
+    color: yellow;
+    /* background-color: blue; */
+    text-decoration: none;
+    text-decoration: underline;
+    /* box-shadow: 50px 10px 5px blue; */
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+
+
+}
+.dropdown__item-color-amarilo-hover-fondo-negro-underline-end:hover{
+
+    background-color: black;
+    text-decoration: underline;
+    text-align: end;
+
+
+}
+.dropdown__button-color-beige-box-shadow-negro-fondo-naranja-hover-fontsize-15px{
+
+
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color:orange;
+    color: beige;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.dropdown__button-color-beige-box-shadow-negro-fondo-naranja-hover-fontsize-15px:hover{
+
+    font-size: 20px;
+
+
+}
+
+.dropdown__item-fondo-azul-hover-fontsize-30px-center-color-naranja{
+
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+    background-color: blue;
+
+}
+
+.dropdown__item-fondo-azul-hover-fontsize-30px-center-color-naranja:hover{
+
+font-size: 30px;
+color: orange;
+
+}
 .dropdown__content {
     display: none;
     position: absolute;
