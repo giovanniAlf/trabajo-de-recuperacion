@@ -35,3 +35,65 @@
 .badge--success .badge__count {
     background-color: #2ecc71;
 }
+.badge--warning-rojo-shadow-negra-hover-fondo-transparente-transition{
+
+    background-color: red;
+    box-shadow: 5px 5px 5px black;
+
+
+}
+.badge--warning-rojo-shadow-negra-hover-fondo-transparente-transition:hover{
+
+
+background-color: transparent;
+transition: 3s;
+
+}
+.badge__icon-azul-hover-shadow-azul-fondo-transparente-transition-fontsize{
+
+background-color: blue;
+
+
+
+}
+.badge__icon-azul-hover-shadow-azul-fondo-transparente-transition-fontsize:hover{
+
+    box-shadow: 5px 5px 5px blue;
+    background-color: transparent;
+    transition: 3s;
+    font-size: 20px;
+
+
+
+}
+.badge__icon-hover-fontsize:hover{
+
+
+    font-size: 60px;
+
+}
+.badge--success-yellow-hover-fondo-verde{
+    background-color: yellow;
+
+}
+.badge--success-yellow-hover-fondo-verde:hover{
+
+
+background-color: green;
+
+
+}
+.badge__count-fontfamily-hover-color-blue-fontsize-fontfamily{
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.badge__count-fontfamily-hover-color-blue-fontsize-fontfamily:hover{
+
+
+color: blue;
+font-size: 40px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
