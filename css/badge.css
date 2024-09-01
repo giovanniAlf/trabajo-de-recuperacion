@@ -85,7 +85,7 @@ background-color: green;
 }
 .badge__count-fontfamily-hover-color-blue-fontsize-fontfamily{
 
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 
 
 }
@@ -95,5 +95,23 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 color: blue;
 font-size: 40px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.badge__camp--fondo-transparente-fontsizeMayor-hover-shadow-fonsizeMenor-fontfamily-transition-fondo-negro{
+
+    background-color: transparent;
+    font-size: 50px;
+
+
+
+}
+.badge__camp--fondo-transparente-fontsizeMayor-hover-shadow-fonsizeMenor-fontfamily-transition-fondo-negro:hover{
+
+box-shadow: 5px 5px 5px black;
+font-size: 25px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+transition: 4px;
+background-color: black;
+
 
 }
