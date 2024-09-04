@@ -81,6 +81,7 @@ body {
 background-color: var(--color-black);
 color: var(--color-purple);
 text-decoration: underline;
+text-align: end;
 
 
 }
@@ -91,7 +92,7 @@ text-decoration: underline;
     flex: 1;
 }
 
-.card__header-base, .card__footer-base {
+.card__header-base{
     background-color: #00ffbf;
     padding: var(--card-padding);
 }
@@ -183,6 +184,7 @@ text-decoration: underline;
     background-color: var(--color-bisque);
     text-decoration: overline;
     text-align: center;
+    transition: 2s;
 }
 
 .card__header-chats:hover {
