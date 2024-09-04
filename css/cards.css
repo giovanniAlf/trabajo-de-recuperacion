@@ -1,195 +1,220 @@
+:root {
+
+    --font-family: Arial, sans-serif;
+    --background-color-body: #f4f4f4;
+    --padding-body: 20px;
+
+  
+    --container-gap: 20px;
+    --container-min-width: 200px;
+
+ 
+    --card-bg-color: #fff;
+    --card-border-radius: 5px;
+    --card-transition-duration: 0.2s;
+    --card-hover-transform: translateY(-5px);
+    --card-hover-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --card-padding: 10px;
+    --card-font-size-header: 18px;
+    --card-font-weight-header: bold;
+    --card-padding-body: 15px;
+    --card-font-size-body: 16px;
+    --card-font-color-body: #333;
+
+    
+    --color-primary: #007BFF;
+    --color-white: #fff;
+    --color-black: black;
+    --color-blue: blue;
+    --color-green: green;
+    --color-aqua: aqua;
+    --color-purple: #9d00ff;
+    --color-yellow: yellow;
+    --color-cyan: rgb(0, 255, 255);
+    --color-bisque: bisque;
+    --color-brown: brown;
+    --color-light-green: #1eff00;
+    --color-teal: #0bc1dd;
+    --color-hover-green: #09ff00;
+    --color-hover-blue: rgb(0, 153, 255);
+    --color-hover-dark: rgb(0, 0, 0);
+    --color-hover-light: #1eff00;
+
+  
+    --transition-duration-long: 4s;
+    --transition-duration-short: 3s;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: var(--font-family);
+    background-color: var(--background-color-body);
     margin: 0;
-    padding: 20px;
+    padding: var(--padding-body);
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(var(--container-min-width), 1fr));
+    gap: var(--container-gap);
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 5px;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    background-color: var(--card-bg-color);
+    border-radius: var(--card-border-radius);
     overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform var(--card-transition-duration) ease, box-shadow var(--card-transition-duration) ease;
     display: flex;
     flex-direction: column;
 }
-.card__body-base{
-
-    background-color: white;
-}
-.card__body-base:hover{
-
-    background-color: aqua;
-    color: black;
-    transition: 4s;
-}
-.card__body-primary{
-
-    background-color: white;
-}
-.card__body-primary:hover{
-
-    background-color: rgb(0, 0, 0);
-    color: black;
-    /* transition: 3s; */
-}
-.card__footer-primary:hover{
-
-    background-color: black;
-    /* transition: 3; */
-
-}
-.card__header-primary:hover{
-
-    background-color: black;
-    /* transition: 3; */
-
-}
-
-.card__body-secondary{
-
-    background-color: white;
-}
-.card__body-secondary:hover{
-
-    background-color: rgb(0, 0, 0);
-    color: black;
-    transition: 4s;
-    text-align: end;
-}
-
-.card__body-terciary{
-
-    background-color: white;
-    text-align: end;
-}
-.card__footer-terciary:hover{
-
-    background-color: rgb(0, 153, 255);
-    color: rgb(255, 255, 255);
-    transition: 4s;
-}
-.card__header-terciary:hover{
-
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    transition: 3s;
-}
-
-.card__body-cuaternary{
-
-    background-color: white;
-}
-.card__footer-cuaternary:hover{
-
-    background-color: rgb(255, 255, 255);
-    color: black;
-    transition: 4s;
-}
-
-
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: var(--card-hover-transform);
+    box-shadow: var(--card-hover-box-shadow);
 }
 
-.card__header-base {
-    background-color: #00ffbf;
-    padding: 10px;
+.card__header, .card__footer {
+    font-size: var(--card-font-size-header);
+    font-weight: var(--card-font-weight-header);
+    padding: var(--card-padding);
 }
 .card__footer-base{
+background-color: var(--color-black);
+color: var(--color-purple);
+text-decoration: underline;
 
-    text-align: end;
-    text-decoration: underline;
-    color: #9d00ff;
 
+}
+.card__body {
+    padding: var(--card-padding-body);
+    font-size: var(--card-font-size-body);
+    color: var(--card-font-color-body);
+    flex: 1;
+}
+
+.card__header-base, .card__footer-base {
+    background-color: #00ffbf;
+    padding: var(--card-padding);
 }
 
 .card__header-base:hover {
-    background-color: #09ff00;
-    padding: 10px;
-    transition: 3s;
+    background-color: var(--color-hover-green);
+    transition: var(--transition-duration-short);
     text-align: end;
 }
 
-.card__header-primary, .card__footer-primary {
-    background-color: #9d00ff;
-    padding: 10px;
+.card__body-base {
+    background-color: var(--color-white);
 }
-.card__header-secondary, .card__footer-secondary {
+
+.card__body-base:hover {
+    background-color: var(--color-aqua);
+    color: var(--color-black);
+    transition: var(--transition-duration-long);
+}
+
+.card__header-lorem, .card__footer-lorem {
+    background-color: var(--color-purple);
+    padding: var(--card-padding);
+}
+
+.card__header-warning, .card__footer-warning {
     background-color: #9dff00;
-    padding: 10px;
-}
-.card__header-terciary, .card__footer-terciary {
-    background-color: #1eff00;
-    padding: 10px;
-}
-.card__header-cuaternary, .card__footer-cuaternary {
-    background-color: #0bc1dd;
-    padding: 10px;
+    padding: var(--card-padding);
 }
 
-
-
-.card__header {
-    font-size: 18px;
-    font-weight: bold;
+.card__header-thats, .card__footer-thats {
+    background-color: var(--color-light-green);
+    padding: var(--card-padding);
 }
 
-.card__body {
-    padding: 15px;
-    font-size: 16px;
-    color: #333;
-    flex: 1; 
+.card__header-chats, .card__footer-chats {
+    background-color: var(--color-teal);
+    padding: var(--card-padding);
 }
 
+.card__header-lorem:hover, .card__footer-lorem:hover {
+    background-color: var(--color-hover-dark);
+}
+
+.card__body-lorem {
+    background-color: var(--color-white);
+}
+
+.card__body-lorem:hover {
+    background-color: var(--color-hover-dark);
+    color: var(--color-black);
+}
+
+.card__footer-lorem:hover {
+    background-color: var(--color-hover-dark);
+}
+
+.card__header-warning:hover, .card__footer-warning:hover {
+    background-color: var(--color-hover-dark);
+    color: var(--color-white);
+    transition: var(--transition-duration-long);
+}
+
+.card__body-warning {
+    background-color: var(--color-white);
+}
+
+.card__body-warning:hover {
+    background-color: var(--color-hover-dark);
+    color: var(--color-black);
+    transition: var(--transition-duration-long);
+    text-align: end;
+}
+
+.card__footer-thats:hover {
+    background-color: var(--color-hover-blue);
+    color: var(--color-white);
+    transition: var(--transition-duration-long);
+}
+
+.card__header-thats:hover {
+    background-color: var(--color-hover-dark);
+    color: var(--color-white);
+    transition: var(--transition-duration-short);
+}
+
+.card__footer-chats:hover {
+    color: var(--color-purple);
+    background-color: var(--color-bisque);
+    text-decoration: overline;
+    text-align: center;
+}
+
+.card__header-chats:hover {
+    background-color: var(--color-brown);
+    text-decoration: overline;
+    text-align: end;
+    color: var(--color-light-green);
+}
 
 .card--base {
-    border-left: 4px solid #007BFF;
-    background-color: black;
-}
-.card--primaria{
-    /* border-left: 4px solid #007BFF; */
-    background-color: blue;
+    border-left: 4px solid var(--color-primary);
+    background-color: var(--color-black);
 }
 
-.card--secundaria {
-    /* border-left: 4px solid #6c757d; */
-    background-color: green;
-  
+.card--lorem {
+    background-color: var(--color-blue);
 }
 
-.card--terciaria {
-    /* border: 2px solid #ddd; */
-    background-color: rgb(0, 255, 255);
+.card--warning {
+    background-color: var(--color-green);
 }
 
-.card--cuaternaria {
+.card--thats {
+    background-color: var(--color-cyan);
+}
+
+.card--chats {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     background-color: #6c757d;
 }
-.card__footer-cuaternary:hover{
+.card__body-chats{
 
-    color: #9d00ff;
-    background-color: bisque;
-    text-decoration: overline;
-    text-align: center;
-
-
-}
-.card__header-cuaternary:hover{
-
-    background-color: brown;
-    text-decoration: overline;
-    text-align: end;
-    color: #1eff00;
+background-color: var(--color-white);
 
 }

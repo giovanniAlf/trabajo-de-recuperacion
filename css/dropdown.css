@@ -1,4 +1,23 @@
+:root {
+    /* Estilos en general*/
+    --font-size-default: 1em;
+    --padding-button: 10px 20px;
+    --border-button: 1px solid #ccc;
+    --border-radius-button: 4px;
+    --transition-fast: 0.3s;
 
+    /* Todos los colorines */
+    --color-white: #fff;
+    --color-black: black;
+    --color-gray: #ccc;
+    --color-blue: #007BFF;
+    --color-green: green;
+    --color-red: red;
+    --color-purple: purple;
+    --color-yellow: yellow;
+    --color-orange: orange;
+    --color-beige: beige;
+}
 
 .dropdown {
     position: relative;
@@ -7,174 +26,138 @@
 }
 
 .dropdown__button {
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #007BFF;
-    color: #fff;
-    font-size: 1em;
+    padding: var(--padding-button);
+    border: var(--border-button);
+    border-radius: var(--border-radius-button);
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: var(--font-size-default);
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color var(--transition-fast);
 }
 
-.dropdown__button-rojo-hover-fondo-verde-transicion{
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color:red;
-    color: #fff;
-    font-size: 1em;
+.dropdown__button-rojo-hover-fondo-verde-transicion {
+    padding: var(--padding-button);
+    border: var(--border-button);
+    border-radius: var(--border-radius-button);
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: var(--font-size-default);
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-.dropdown__button-rojo-hover-fondo-verde-transicion:hover{
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color:green;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color var(--transition-fast);
 }
 
+.dropdown__button-rojo-hover-fondo-verde-transicion:hover {
+    background-color: var(--color-green);
+}
 
-.dropdown__button-morado-overline-hover-letra-amarillo{
-
-    
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color:purple;
-    color: #fff;
-    font-size: 1em;
+.dropdown__button-morado-overline-hover-letra-amarillo {
+    padding: var(--padding-button);
+    border: var(--border-button);
+    border-radius: var(--border-radius-button);
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    font-size: var(--font-size-default);
     cursor: pointer;
     text-decoration: overline;
-    transition: background-color 0.3s;
-
+    transition: background-color var(--transition-fast);
 }
-.dropdown__button-morado-overline-hover-letra-amarillo:hover{
 
-
-color: yellow;
-
-
+.dropdown__button-morado-overline-hover-letra-amarillo:hover {
+    color: var(--color-yellow);
 }
-.dropdown__item-fondo-negro-letra-purple-overline{
 
+.dropdown__item-fondo-negro-letra-purple-overline {
     display: block;
     padding: 10px;
-    color: purple;
-    background-color: black;
-    text-decoration: none;
+    color: var(--color-purple);
+    background-color: var(--color-black);
+    text-decoration: overline;
     border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s;
-
-
+    transition: background-color var(--transition-fast);
 }
-.dropdown__item-fondo-azul-transition-underline-shadow-amarilla{
 
-    
-   display: block;
+.dropdown__item-fondo-azul-transition-underline-shadow-amarilla {
+    display: block;
     padding: 10px;
-    color: rgb(255, 255, 255);
-    background-color: blue;
-    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-blue);
     text-decoration: underline;
-    box-shadow: 50px 10px 5px yellow;
+    box-shadow: 50px 10px 5px var(--color-yellow);
     border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s;
-
-
+    transition: background-color var(--transition-fast);
 }
-.dropdown__buttondropdown__button-fondo-verde-overline-hover-letra-azul-fondo-negro-underline-final{
-    background-color: green; 
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    /* background-color:purple; */
-    color: #fff;
-    font-size: 1em;
+
+.dropdown__buttondropdown__button-fondo-verde-overline-hover-letra-azul-fondo-negro-underline-final {
+    padding: var(--padding-button);
+    border: var(--border-button);
+    border-radius: var(--border-radius-button);
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-size: var(--font-size-default);
     cursor: pointer;
     text-decoration: overline;
-    transition: background-color 0.3s;
+    transition: background-color var(--transition-fast);
 }
-.dropdown__buttondropdown__button-fondo-verde-overline-hover-letra-azul-fondo-negro-underline-final:hover{
 
-color: blue;
-background-color: black;
-text-align: end;
-
-
-
-}
-.dropdown__item-color-amarilo-hover-fondo-negro-underline-end{
-
-    display: block;
-    padding: 10px;
-    color: yellow;
-    /* background-color: blue; */
-    text-decoration: none;
-    text-decoration: underline;
-    /* box-shadow: 50px 10px 5px blue; */
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s;
-
-
-}
-.dropdown__item-color-amarilo-hover-fondo-negro-underline-end:hover{
-
-    background-color: black;
-    text-decoration: underline;
+.dropdown__buttondropdown__button-fondo-verde-overline-hover-letra-azul-fondo-negro-underline-final:hover {
+    color: var(--color-blue);
+    background-color: var(--color-black);
     text-align: end;
-
-
 }
-.dropdown__button-color-beige-box-shadow-negro-fondo-naranja-hover-fontsize-15px{
 
+.dropdown__item-color-amarilo-hover-fondo-negro-underline-end {
+    display: block;
+    padding: 10px;
+    color: var(--color-yellow);
+    text-decoration: underline;
+    border-bottom: 1px solid #ddd;
+    transition: background-color var(--transition-fast);
+}
 
-    padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color:orange;
-    color: beige;
-    font-size: 1em;
+.dropdown__item-color-amarilo-hover-fondo-negro-underline-end:hover {
+    background-color: var(--color-black);
+    text-align: end;
+}
+
+.dropdown__button-color-beige-box-shadow-negro-fondo-naranja-hover-fontsize-15px {
+    padding: var(--padding-button);
+    border: var(--border-button);
+    border-radius: var(--border-radius-button);
+    background-color: var(--color-orange);
+    color: var(--color-beige);
+    font-size: var(--font-size-default);
     cursor: pointer;
-    transition: background-color 0.3s;
-
-}
-.dropdown__button-color-beige-box-shadow-negro-fondo-naranja-hover-fontsize-15px:hover{
-
-    font-size: 20px;
-
-
+    transition: background-color var(--transition-fast);
 }
 
-.dropdown__item-fondo-azul-hover-fontsize-30px-center-color-naranja{
+.dropdown__button-color-beige-box-shadow-negro-fondo-naranja-hover-fontsize-15px:hover {
+    font-size: 15px;
+    box-shadow: 2px 2px 5px var(--color-black);
+}
 
+.dropdown__item-fondo-azul-hover-fontsize-30px-center-color-naranja {
     display: block;
     padding: 10px;
     color: #333;
+    background-color: var(--color-blue);
     text-decoration: none;
     border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s;
-    background-color: blue;
-
+    transition: background-color var(--transition-fast);
 }
 
-.dropdown__item-fondo-azul-hover-fontsize-30px-center-color-naranja:hover{
-
-font-size: 30px;
-color: orange;
-
+.dropdown__item-fondo-azul-hover-fontsize-30px-center-color-naranja:hover {
+    font-size: 30px;
+    color: var(--color-orange);
 }
+
 .dropdown__content {
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: var(--color-white);
     min-width: 160px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: var(--border-radius-button);
     z-index: 1;
     margin-top: 5px;
 }
@@ -185,7 +168,7 @@ color: orange;
     color: #333;
     text-decoration: none;
     border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s;
+    transition: background-color var(--transition-fast);
 }
 
 .dropdown__item:last-child {

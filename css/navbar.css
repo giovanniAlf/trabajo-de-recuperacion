@@ -1,84 +1,79 @@
+:root {
+    /* General Styles */
+    --padding-navbar: 10px;
+    --padding-link: 10px 20px;
+    --font-size-link: 16px;
+    --transition-fast: 0.3s;
+
+    /* Colors */
+    --color-white: #fff;
+    --color-black: black;
+    --color-blue: blue;
+    --color-yellow: yellow;
+    --color-green: green;
+    --color-transp: transparent;
+}
 
 .navbar {
     max-width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: var(--padding-navbar);
     display: flex;
     justify-content: space-around;
 }
 
-
 .navbar__link {
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    color: white; 
+    padding: var(--padding-link);
+    font-size: var(--font-size-link);
+    transition: background-color var(--transition-fast);
+    color: var(--color-white);
 }
 
 .navbar__link:hover {
-    /* background-color: #555; */
     border-radius: 5px;
 }
-.linea-ancha{
 
-    /* width: 5px; */
+.linea-ancha {
     height: 10px;
-    background-color: black;
-
-
+    background-color: var(--color-black);
 }
-.navbar--amarilla{
 
-    background-color: yellow;
-
+.navbar--amarilla {
+    background-color: var(--color-yellow);
 }
-.navbar__link--hover-azul:hover{
 
-    background-color: blue;
-
+.navbar__link--hover-azul:hover {
+    background-color: var(--color-blue);
 }
-.navbar--azul{
 
-    background-color: blue;
-
-
-
+.navbar--azul {
+    background-color: var(--color-blue);
 }
-.navbar__link--overline-hover-negro{
 
+.navbar__link--overline-hover-negro {
     text-decoration: overline;
-    
-
 }
-.navbar__link--overline-hover-negro:hover{
 
-background-color: black;
-
+.navbar__link--overline-hover-negro:hover {
+    background-color: var(--color-black);
 }
-.navbar--verde{
 
-    background-color: transparent;
-
+.navbar--verde {
+    background-color: var(--color-transp);
 }
-.navbar__link--hover-verde-underline:hover{
 
-    background-color: green;
+.navbar__link--hover-verde-underline:hover {
+    background-color: var(--color-green);
     text-decoration: underline;
 }
-.navbar--negra{
 
-
-    background-color: black;
-
+.navbar--negra {
+    background-color: var(--color-black);
 }
-.navbar__link--hover-azul-borderradius-overline:hover{
 
-
-background-color: blue;
-border-radius: 40px;
-text-decoration: overline;
-
-
-
+.navbar__link--hover-azul-borderradius-overline:hover {
+    background-color: var(--color-blue);
+    border-radius: 40px;
+    text-decoration: overline;
 }

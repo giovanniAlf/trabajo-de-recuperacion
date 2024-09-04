@@ -1,7 +1,32 @@
+:root {
+
+
+    /* colores y algunos tamaños */
+    --color-background-light: #f9f7e7;
+    --color-background-dark: #333;
+    --color-background-hover: #ddd;
+    --color-text-dark: #333;
+    --color-text-light: #fff;
+    --color-accent-yellow: yellow;
+    --color-accent-green: green;
+    --color-accent-purple: purple;
+    --color-accent-red: #e74c3c;
+    --color-error-background: #fce4e4;
+    --color-shadow-green: green;
+    --color-shadow-purple: purple;
+    --color-box-shadow: rgba(0, 0, 0, 0.1);
+    --border-color-light: #ccc;
+    --border-color-dark: #333;
+    --border-radius: 2px;
+    --font-size-small: 12px;
+    --font-size-large: 30px;
+    --font-size-xlarge: 20px;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f7e7;
-    color: #333;
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
     padding: 20px;
 }
 
@@ -11,15 +36,15 @@ body {
 }
 
 .pagination button {
-    background-color: #ddd;
-    border: 1px solid #ccc;
+    background-color: var(--color-background-hover);
+    border: 1px solid var(--border-color-light);
     padding: 5px 10px;
     cursor: pointer;
 }
 
 .pagination .active {
     background-color: #666;
-    color: #fff;
+    color: var(--color-text-light);
 }
 
 .form {
@@ -27,7 +52,7 @@ body {
     margin: 0 auto;
 }
 
-.form-group {
+.form_group {
     margin-bottom: 20px;
 }
 
@@ -40,20 +65,20 @@ label {
 input[type="text"], input[type="email"] {
     width: 100%;
     padding: 8px;
-    border: 1px solid #333;
-    border-radius: 2px;
+    border: 1px solid var(--border-color-dark);
+    border-radius: var(--border-radius);
     box-sizing: border-box;
     background-color: #f5f5dc;
 }
 
 input.error {
-    border-color: #e74c3c;
-    background-color: #fce4e4;
+    border-color: var(--color-error-background);
+    background-color: var(--color-error-background);
 }
 
 .error-message {
-    color: #e74c3c;
-    font-size: 12px;
+    color: var(--color-error-background);
+    font-size: var(--font-size-small);
     margin-top: 5px;
     display: block;
 }
@@ -73,55 +98,41 @@ input.error {
     font-size: 16px;
     color: #666;
 }
-.form-group-fondo-negro-color-blanco-shadow-verder-hover-fondo-transparente{
 
+/* Form Group Style Variants */
+.form_group-fondo-negro-color-blanco-shadow-verder-hover-fondo-transparente {
     background-color: black;
     color: white;
-    box-shadow: 5px 5px 5px green;
-
-
+    box-shadow: 5px 5px 5px var(--color-accent-green);
 }
-.form-group-fondo-negro-color-blanco-shadow-verder-hover-fondo-transparente:hover{
 
-background-color: transparent;
-
-
-
+.form_group-fondo-negro-color-blanco-shadow-verder-hover-fondo-transparente:hover {
+    background-color: transparent;
 }
-.form-group-fontfamilly-fondo-verde{
 
-
+.form_group-fontfamilly-fondo-verde {
     font-family: cursive;
-    background-color: green;
-
-
+    background-color: var(--color-accent-green);
 }
-.form-group-hover-amarillo-transition-shadow-morado-fontsize:hover{
 
-    background-color: yellow;
-    box-shadow: purple;
-    font-size: 20px;
+.form_group-hover-amarillo-transition-shadow-morado-fontsize:hover {
+    background-color: var(--color-accent-yellow);
+    box-shadow: 0 0 10px var(--color-shadow-purple);
+    font-size: var(--font-size-xlarge);
     transition: 4s;
-
-
-
 }
-.form-group-fontsizeMayor-fontfamily-color-purprle-fondo-negro-hover-transition-fondo-transparente-fontsizemenor-end-fontfamily{
 
+.form_group-fontsizeMayor-fontfamily-color-purprle-fondo-negro-hover-transition-fondo-transparente-fontsizemenor-end-fontfamily {
     font-family: fantasy;
-    font-size: 30px;
-    color: purple;
+    font-size: var(--font-size-large);
+    color: var(--color-accent-purple);
     background-color: black;
-
-
 }
-.form-group-fontsizeMayor-fontfamily-color-purprle-fondo-negro-hover-transition-fondo-transparente-fontsizemenor-end-fontfamily:hover{
 
-background-color: transparent;
-font-size: 10px;
-text-align: end;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-transition: 4s;
-
-
+.form_group-fontsizeMayor-fontfamily-color-purprle-fondo-negro-hover-transition-fondo-transparente-fontsizemenor-end-fontfamily:hover {
+    background-color: transparent;
+    font-size: 10px;
+    text-align: end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 4s;
 }

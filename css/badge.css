@@ -1,14 +1,52 @@
+:root {
+
+    --badge-padding: 10px;
+    --badge-bg-color: #eee;
+    --badge-border-radius: 12px;
+    --badge-font-size: 1.5em;
 
 
+    --badge-count-bg-color: #ff4d4d;
+    --badge-count-color: #fff;
+    --badge-count-border-radius: 50%;
+    --badge-count-padding: 5px 10px;
+    --badge-count-font-size: 0.9em;
+    --badge-count-position-top: -5px;
+    --badge-count-position-right: -5px;
+    --badge-count-min-width: 20px;
+
+  
+    --badge-warning-bg-color: #f39c12;
+    --badge-success-bg-color: #2ecc71;
+    --badge-red-bg-color: red;
+    --badge-transparent-bg-color: transparent;
+    --badge-blue-bg-color: blue;
+    --badge-yellow-bg-color: yellow;
+    --badge-green-bg-color: green;
+    --badge-black-shadow: 5px 5px 5px black;
+    --badge-blue-shadow: 5px 5px 5px blue;
+
+  
+    --badge-hover-font-size-big: 60px;
+    --badge-hover-font-size-small: 20px;
+    --badge-hover-font-size-smaller: 25px;
+    --badge-hover-font-size-larger: 50px;
+    --badge-hover-font-color: blue;
+    --badge-font-family-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --badge-font-family-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    
+    --badge-transition-duration: 3s;
+}
 
 .badge {
     position: relative;
     display: inline-flex;
     align-items: center;
-    padding: 10px;
-    background-color: #eee;
-    border-radius: 12px;
-    font-size: 1.5em;
+    padding: var(--badge-padding);
+    background-color: var(--badge-bg-color);
+    border-radius: var(--badge-border-radius);
+    font-size: var(--badge-font-size);
 }
 
 .badge__icon {
@@ -16,102 +54,74 @@
 }
 
 .badge__count {
-    background-color: #ff4d4d;
-    color: #fff;
-    border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 0.9em;
+    background-color: var(--badge-count-bg-color);
+    color: var(--badge-count-color);
+    border-radius: var(--badge-count-border-radius);
+    padding: var(--badge-count-padding);
+    font-size: var(--badge-count-font-size);
     position: absolute;
-    top: -5px;
-    right: -5px;
-    min-width: 20px;
+    top: var(--badge-count-position-top);
+    right: var(--badge-count-position-right);
+    min-width: var(--badge-count-min-width);
     text-align: center;
 }
 
 .badge--warning .badge__count {
-    background-color: #f39c12;
+    background-color: var(--badge-warning-bg-color);
 }
 
-.badge--success .badge__count {
-    background-color: #2ecc71;
+.badge__success .badge__count {
+    background-color: var(--badge-success-bg-color);
 }
-.badge--warning-rojo-shadow-negra-hover-fondo-transparente-transition{
 
-    background-color: red;
-    box-shadow: 5px 5px 5px black;
-
-
+.badge__warning-rojo-shadow-negra-hover-fondo-transparente-transition {
+    background-color: var(--badge-red-bg-color);
+    box-shadow: var(--badge-black-shadow);
 }
-.badge--warning-rojo-shadow-negra-hover-fondo-transparente-transition:hover{
 
-
-background-color: transparent;
-transition: 3s;
-
+.badge__warning-rojo-shadow-negra-hover-fondo-transparente-transition:hover {
+    background-color: var(--badge-transparent-bg-color);
+    transition: var(--badge-transition-duration);
 }
-.badge__icon-azul-hover-shadow-azul-fondo-transparente-transition-fontsize{
 
-background-color: blue;
-
-
-
+.badge__icon-azul-hover-shadow-azul-fondo-transparente-transition-fontsize {
+    background-color: var(--badge-blue-bg-color);
 }
-.badge__icon-azul-hover-shadow-azul-fondo-transparente-transition-fontsize:hover{
 
-    box-shadow: 5px 5px 5px blue;
-    background-color: transparent;
-    transition: 3s;
-    font-size: 20px;
-
-
-
+.badge__icon-azul-hover-shadow-azul-fondo-transparente-transition-fontsize:hover {
+    box-shadow: var(--badge-blue-shadow);
+    background-color: var(--badge-transparent-bg-color);
+    transition: var(--badge-transition-duration);
+    font-size: var(--badge-hover-font-size-small);
 }
-.badge__icon-hover-fontsize:hover{
 
-
-    font-size: 60px;
-
+.badge__icon-hover-fontsize:hover {
+    font-size: var(--badge-hover-font-size-big);
 }
-.badge--success-yellow-hover-fondo-verde{
-    background-color: yellow;
 
+.badge__success-yellow-hover-fondo-verde {
+    background-color: var(--badge-yellow-bg-color);
 }
-.badge--success-yellow-hover-fondo-verde:hover{
 
-
-background-color: green;
-
-
+.badge__success-yellow-hover-fondo-verde:hover {
+    background-color: var(--badge-green-bg-color);
 }
-.badge__count-fontfamily-hover-color-blue-fontsize-fontfamily{
 
-
-
-
+.badge__count-fontfamily-hover-color-blue-fontsize-fontfamily:hover {
+    color: var(--badge-hover-font-color);
+    font-size: var(--badge-hover-font-size-big);
+    font-family: var(--badge-font-family-sans);
 }
-.badge__count-fontfamily-hover-color-blue-fontsize-fontfamily:hover{
 
-
-color: blue;
-font-size: 40px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+.badge__camp--fondo-transparente-fontsizeMayor-hover-shadow-fonsizeMenor-fontfamily-transition-fondo-negro {
+    background-color: var(--badge-transparent-bg-color);
+    font-size: var(--badge-hover-font-size-larger);
 }
-.badge__camp--fondo-transparente-fontsizeMayor-hover-shadow-fonsizeMenor-fontfamily-transition-fondo-negro{
 
-    background-color: transparent;
-    font-size: 50px;
-
-
-
-}
-.badge__camp--fondo-transparente-fontsizeMayor-hover-shadow-fonsizeMenor-fontfamily-transition-fondo-negro:hover{
-
-box-shadow: 5px 5px 5px black;
-font-size: 25px;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-transition: 4px;
-background-color: black;
-
-
+.badge__camp--fondo-transparente-fontsizeMayor-hover-shadow-fonsizeMenor-fontfamily-transition-fondo-negro:hover {
+    box-shadow: var(--badge-black-shadow);
+    font-size: var(--badge-hover-font-size-smaller);
+    font-family: var(--badge-font-family-serif);
+    transition: var(--badge-transition-duration);
+    background-color: black;
 }

@@ -1,36 +1,55 @@
+:root {
+    /* tamaños varios */
+    --gap-spacing: 10px;
+    --padding-container: 20px;
+    --padding-notification: 15px;
+    --border-radius: 5px;
+    --font-size-icon: 1.5em;
+    --font-size-notification: 1em;
 
+    /* algunos colores que se utilizan*/
+    --color-white: #fff;
+    --color-black: #000;
+    --color-blue: blue;
+    --color-green: #28a745;
+    --color-red: red;
+    --color-brown: brown;
+    --color-violet: violet;
+    --color-purple: purple;
+    --color-yellow: yellow;
+    --color-transparent: transparent;
+
+    /* algunas sombras*/
+    --shadow-black: 50px 10px 5px black;
+    --shadow-orange: 50px 10px 5px orange;
+}
 
 .notification-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    /* background-color: #ffc107; */
-
+    gap: var(--gap-spacing);
+    padding: var(--padding-container);
 }
-.linea-ancha{
 
-
+.linea-ancha {
     width: 5000px;
     height: 6px;
-    background-color: black;
-
-
-
+    background-color: var(--color-black);
 }
+
 .notification {
     display: flex;
     align-items: center;
-    padding: 15px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1em;
+    padding: var(--padding-notification);
+    border-radius: var(--border-radius);
+    color: var(--color-white);
+    font-size: var(--font-size-notification);
     position: relative;
 }
 
 .notification__icon {
-    font-size: 1.5em;
-    margin-right: 10px;
+    font-size: var(--font-size-icon);
+    margin-right: var(--gap-spacing);
 }
 
 .notification__message {
@@ -38,99 +57,75 @@
 }
 
 .notification--base {
-    background-color: #28a745; 
+    background-color: var(--color-green);
 }
 
-.notification--Hola-azul{
-
-    background-color: blue;
-
+.notification--Hola-azul {
+    background-color: var(--color-blue);
 }
 
-.notification__message-hover-shadownegro-letraverde:hover{
-    
-        box-shadow: 50px 10px 5px black;
-       color: green;
-
+.notification__message-hover-shadownegro-letraverde:hover {
+    box-shadow: var(--shadow-black);
+    color: var(--color-green);
 }
 
-.notification--Chao{
-
-    background-color: red;
-
+.notification--Chao {
+    background-color: var(--color-red);
 }
-.notification__icon-underline{
 
+.notification__icon-underline {
     text-decoration: underline;
-
-
-
 }
-.notification__message-hover-fondovioleta-overline-letraazul:hover{
 
-background-color: violet;
-text-decoration: overline;
-color: blue;
-
+.notification__message-hover-fondovioleta-overline-letraazul:hover {
+    background-color: var(--color-violet);
+    text-decoration: overline;
+    color: var(--color-blue);
 }
-.notification--Nosvemos-brown{
 
-    background-color: brown;
-
-
+.notification--Nosvemos-brown {
+    background-color: var(--color-brown);
 }
-.notification__icon-hover-letra-negra-fondo-blanco:hover{
 
-    color: black;
-    background-color: white;
-
+.notification__icon-hover-letra-negra-fondo-blanco:hover {
+    color: var(--color-black);
+    background-color: var(--color-white);
 }
-.notification__message-underline-hover-overline-letra-verde-fondo-morado{
 
+.notification__message-underline-hover-overline-letra-verde-fondo-morado {
     text-decoration: underline;
-
-
 }
-.notification__message-underline-hover-overline-letra-verde-fondo-morado:hover{
 
+.notification__message-underline-hover-overline-letra-verde-fondo-morado:hover {
     text-decoration: overline;
-    color: green;
-    background-color: purple;
-
+    color: var(--color-green);
+    background-color: var(--color-purple);
 }
-.notification--missu-no-fondo{
 
-    background-color: transparent;
+.notification--missu-no-fondo {
+    background-color: var(--color-transparent);
 }
-.notification__icon-hover-overline-hover-fondo-verde:hover{
 
+.notification__icon-hover-overline-hover-fondo-verde:hover {
     text-decoration: overline;
-    background-color: green;
-
-
+    background-color: var(--color-green);
 }
-.notification__message-hover-fondo-negro-letra-amarillo:hover{
 
-    background-color: black;
-    color: yellow;
-
-
-
+.notification__message-hover-fondo-negro-letra-amarillo:hover {
+    background-color: var(--color-black);
+    color: var(--color-yellow);
 }
-.notification--hateu-fondo-verde-shadow-naranja{
 
-    background-color: green;
-    box-shadow: 50px 10px 5px orange;
+.notification--hateu-fondo-verde-shadow-naranja {
+    background-color: var(--color-green);
+    box-shadow: var(--shadow-orange);
 }
-.notification__icon-hover-transition-fondo-negro:hover{
 
-background-color: black;
-transition: 5s;
-
+.notification__icon-hover-transition-fondo-negro:hover {
+    background-color: var(--color-black);
+    transition: 5s;
 }
-.notification__message-hover-letra-azul{
 
-color: blue;
-
-
+.notification__message-hover-letra-azul:hover {
+    color: var(--color-blue);
 }

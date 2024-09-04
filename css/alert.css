@@ -1,16 +1,40 @@
+:root {
+    --alert-padding: 15px;
+    --alert-border-radius: 5px;
+    --alert-margin-bottom: 20px;
+    --alert-font-size: 20px;
+    --alert-transition-duration: 0.3s;
+
+   /* coloriness */
+    --alert-color-info: #007BFF;
+    --alert-bg-info: #e7f0ff;
+    --alert-color-success: #155724;
+    --alert-bg-success: #d4edda;
+    --alert-border-color-info: #007BFF;
+    --alert-border-color-success: #c3e6cb;
+    --alert-color-close-btn: #333;
+/* colores pero de los hover profe jhon */
+    --alert-bg-red: rgb(138, 8, 8);
+    --alert-bg-brown-hover: #856404;
+    --alert-bg-purple: purple;
+    --alert-bg-purple-hover: #5700f9;
+    --alert-bg-lightblue: rgb(0, 136, 255);
+    --alert-bg-lightblue-hover: #8dd6e0;
+    --alert-color-red-hover: rgb(255, 0, 0);
+}
 
 .alert {
     display: flex;
     align-items: center;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    padding: var(--alert-padding);
+    border-radius: var(--alert-border-radius);
+    margin-bottom: var(--alert-margin-bottom);
     position: relative;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color var(--alert-transition-duration) ease, border-color var(--alert-transition-duration) ease;
 }
 
 .alert__icon {
-    font-size: 20px;
+    font-size: var(--alert-font-size);
     margin-right: 10px;
 }
 
@@ -21,99 +45,76 @@
 .alert__close-btn {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: var(--alert-font-size);
     cursor: pointer;
     position: absolute;
     top: 10px;
     right: 10px;
-    color: inherit;
+    color: var(--alert-color-close-btn);
 }
 
-/* Modificadores */
-.alert--info {
-    background-color: #e7f0ff;
-    color: #007BFF;
-    border: 1px solid #007BFF;
+.alert__info {
+    background-color: var(--alert-bg-info);
+    color: var(--alert-color-info);
+    border: 1px solid var(--alert-border-color-info);
     text-decoration: underline;
 }
 
-
-.alert--success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
+.alert__success-fondo-claro-color-bordersolid-alignitems-justify-tdecoration-flex {
+    background-color: var(--alert-bg-success);
+    color: var(--alert-color-success);
+    border: 1px solid var(--alert-border-color-success);
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: underline;
 }
 
-.alert--success:hover {
+.alert__success-fondo-claro-color-bordersolid-alignitems-justify-tdecoration-flex:hover {
     background-color: #00ff3c;
     border-color: #000000;
     transition: 6s;
     text-decoration: dashed;
-    display: flex;
-   text-align: center;
-   justify-content: center;
+    text-align: center;
 }
 
-
-
-
-.alert__close-btn:hover {
-    color: #333;
-}
-
-.alert--info--rojo{
-    background-color: rgb(138, 8, 8);
+.alert__info--rojo-hover-fondo-marron-transition-felx-textalign {
+    background-color: var(--alert-bg-red);
     color: white;
 }
-.alert--info--rojo:hover{
 
-    background-color: #856404;
-    /* color: black; */
+.alert__info--rojo-hover-fondo-marron-transition-felx-textalign:hover {
+    background-color: var(--alert-bg-brown-hover);
     transition: 3s;
     display: flex;
     text-align: end;
-
-
-
-
 }
 
-.alert--info_morada{
-
-    background-color: purple;
+.alert__info_morada-textdecor-hover-underline-transition-center-aligncontent-center-fondo-violeta-white {
+    background-color: var(--alert-bg-purple);
     text-decoration: overline;
-
 }
 
-.alert--info_morada:hover{
-
+.alert__info_morada-textdecor-hover-underline-transition-center-aligncontent-center-fondo-violeta-white:hover {
     text-decoration: underline;
     transition: 3s;
     text-align: center;
     align-content: center;
-    background-color: #5700f9;
+    background-color: var(--alert-bg-purple-hover);
     color: white;
-
-
 }
-.alert--info--azulclaro{
-    background-color: rgb(0, 136, 255);
-        
-}
-.alert--info--azulclaro:hover{
 
+.alert__info--azulclaro-hover-underline-transition-end-fondo-azulclaro-scalex-pointer{
+    background-color: var(--alert-bg-lightblue);
+}
+
+.alert__info--azulclaro-hover-underline-transition-end-fondo-azulclaro-scalex-pointer:hover {
     text-decoration: underline;
     transition: 3s;
     text-align: end;
     align-content: center;
-    background-color: #8dd6e0;
-    color: rgb(255, 0, 0);
-    /* __ el scalex(-1) cuenta como un componente de texto invertido profe */
-    transform: scaleX(-1);     
+    background-color: var(--alert-bg-lightblue-hover);
+    color: var(--alert-color-red-hover);
+    transform: scaleX(-1);
     cursor: pointer;
-
 }
