@@ -1,0 +1,303 @@
+
+:root {
+
+    /* variables para acordeon */
+    --color_fondo: aqua;
+    --color1: #66D7D1;
+    --color2: #55b4e7;
+    --color3: #f26ab5;
+    --color4: #f5cf54;
+    --color_morado_borde: #ff06c1;
+    --color_morado_fondo: #ffffff;
+    --color_morado_title_bg: #620f6f;
+    --color_morado_title_text: #5a3e6f;
+    --color_morado_hover_bg: #d08cbf;
+    --color_morado_hover_text: #9900ff;
+    --color_morado_content_bg: #f3e6f8;
+
+    --color_verde_borde: #9aab73;
+    --color_verde_fondo: #e1f3e1;
+    --color_verde_title_bg: #a5d6a7;
+    --color_verde_title_text: #2c6e49;
+    --color_verde_content_bg: #e6f8e6;
+
+    --color_azul_borde: #4a90e2;
+    --color_azul_fondo: #e3f0f8;
+    --color_azul_title_bg: #90d0f8;
+    --color_azul_title_text: #1a3e6f;
+    --color_azul_hover_bg: #6ab0e8;
+    --color_azul_hover_text: var(--color3);
+    --color_azul_content_bg: #e6f0f8;
+
+    --color_rojo_borde: #e57373;
+    --color_rojo_fondo: #fbe9e7;
+    --color_rojo_title_bg: #f48fb1;
+    --color_rojo_title_text: #a02c2c;
+    --color_rojo_hover_bg: var(--color4);
+    --color_rojo_hover_text: #730d0d;
+    --color_rojo_content_bg: #f8e6e6;
+
+
+
+    /* variables para alert */
+    --blanco: white;
+    --naranja: orange;
+    --negro: black;
+    --esquina_redondeada: 15px;
+    --width1: 100;
+    --animacion: 800px;
+    --alert-padding: 15px;
+    --alert-border-radius: 5px;
+    --alert-margin-bottom: 20px;
+    --alert-font-size: 20px;
+    --alert-transition-duration: 0.3s;
+
+
+
+    /* variables para badge */
+     --alert-color-info: #007BFF;
+    --alert-bg-info: #e7f0ff;
+    --alert-color-success: #155724;
+    --alert-bg-success: #d4edda;
+    --alert-border-color-info: #007BFF;
+    --alert-border-color-success: #c3e6cb;
+    --alert-color-close-btn: #333;
+   /* colores pero de los hover de badge profe jhon */
+    --alert-bg-red: rgb(138, 8, 8);
+    --alert-bg-brown-hover: #856404;
+    --alert-bg-purple: purple;
+    --alert-bg-purple-hover: #5700f9;
+    --alert-bg-lightblue: rgb(0, 136, 255);
+    --alert-bg-lightblue-hover: #8dd6e0;
+    --alert-color-red-hover: rgb(255, 0, 0);
+    --badge-padding: 10px;
+    --badge-bg-color: #eee;
+    --badge-border-radius: 12px;
+    --badge-font-size: 1.5em;
+    --badge-count-bg-color: #ff4d4d;
+    --badge-count-color: #fff;
+    --badge-count-border-radius: 50%;
+    --badge-count-padding: 5px 10px;
+    --badge-count-font-size: 0.9em;
+    --badge-count-position-top: -5px;
+    --badge-count-position-right: -5px;
+    --badge-count-min-width: 20px;
+    --badge-warning-bg-color: #f39c12;
+    --badge-success-bg-color: #2ecc71;
+    --badge-red-bg-color: red;
+    --badge-transparent-bg-color: transparent;
+    --badge-blue-bg-color: blue;
+    --badge-yellow-bg-color: yellow;
+    --badge-green-bg-color: green;
+    --badge-black-shadow: 5px 5px 5px black;
+    --badge-blue-shadow: 5px 5px 5px blue;
+    --badge-hover-font-size-big: 60px;
+    --badge-hover-font-size-small: 20px;
+    --badge-hover-font-size-smaller: 25px;
+    --badge-hover-font-size-larger: 50px;
+    --badge-hover-font-color: blue;
+    --badge-font-family-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --badge-font-family-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --badge-transition-duration: 3s;
+    
+
+
+
+    /* variables para las cards */
+    --font-family: Arial, sans-serif;
+    --background-color-body: #f4f4f4;
+    --padding-body: 20px;
+    --container-gap: 20px;
+    --container-min-width: 200px;
+    --card-bg-color: #fff;
+    --card-border-radius: 5px;
+    --card-transition-duration: 0.2s;
+    --card-hover-transform: translateY(-5px);
+    --card-hover-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --card-padding: 10px;
+    --card-font-size-header: 18px;
+    --card-font-weight-header: bold;
+    --card-padding-body: 15px;
+    --card-font-size-body: 16px;
+    --card-font-color-body: #333;
+    --color-primary: #007BFF;
+    --color-white: #fff;
+    --color-black: black;
+    --color-blue: blue;
+    --color-green: green;
+    --color-aqua: aqua;
+    --color-purple: #9d00ff;
+    --color-yellow: yellow;
+    --color-cyan: rgb(0, 255, 255);
+    --color-bisque: bisque;
+    --color-brown: brown;
+    --color-light-green: #1eff00;
+    --color-teal: #0bc1dd;
+    --color-hover-green: #09ff00;
+    --color-hover-blue: rgb(0, 153, 255);
+    --color-hover-dark: rgb(0, 0, 0);
+    --color-hover-light: #1eff00;
+    --transition-duration-long: 4s;
+    --transition-duration-short: 3s;
+
+
+
+
+    /* variables para dropdown */
+    --font-size-default: 1em;
+    --padding-button: 10px 20px;
+    --border-button: 1px solid #ccc;
+    --border-radius-button: 4px;
+    --transition-fast: 0.3s;
+    --color-white: #fff;
+    --color-black: black;
+    --color-gray: #ccc;
+    --color-blue: #007BFF;
+    --color-green: green;
+    --color-red: red;
+    --color-purple: purple;
+    --color-yellow: yellow;
+    --color-orange: orange;
+    --color-beige: beige;
+
+
+
+
+    /*variables para navbar */
+    --padding-navbar: 10px;
+    --padding-link: 10px 20px;
+    --font-size-link: 16px;
+    --transition-fast: 0.3s;
+    --color-white: #fff;
+    --color-black: black;
+    --color-blue: blue;
+    --color-yellow: yellow;
+    --color-green: green;
+    --color-transp: transparent;
+
+
+
+    /* variables para notificacion */
+    --gap-spacing: 10px;
+    --padding-container: 20px;
+    --padding-notification: 15px;
+    --border-radius: 5px;
+    --font-size-icon: 1.5em;
+    --font-size-notification: 1em;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-blue: blue;
+    --color-green: #28a745;
+    --color-red: red;
+    --color-brown: brown;
+    --color-violet: violet;
+    --color-purple: purple;
+    --color-yellow: yellow;
+    --color-transparent: transparent;
+
+
+
+    
+    /* variables de pagination */
+    --shadow-black: 50px 10px 5px black;
+    --shadow-orange: 50px 10px 5px orange;
+    --pagination-padding: 10px;
+    --pagination-margin: 20px 0;
+    --item-padding: 10px 15px;
+    --item-margin: 0 5px;
+    --border-color: #ddd;
+    --border-radius: 5px;
+    --text-color: #333;
+    --hover-bg-color: #f0f0f0;
+    --active-bg-color: #666;
+    --active-text-color: #fff;
+
+
+
+
+    /* variables de post */
+    --color-background: #f4f4f4;
+    --color-primary-dark: #333;
+    --color-primary-light: #444;
+    --color-text-light: #fff;
+    --color-text-dark: #333;
+    --color-accent-blue: blue;
+    --color-accent-orange: orange;
+    --color-accent-green: green;
+    --color-accent-red: red;
+    --color-accent-purple: purple;
+    --color-shadow-dark: black;
+    --color-shadow-light: rgba(0, 0, 0, 0.1);
+    --border-radius: 6px;
+    --box-shadow: 0 2px 10px var(--color-shadow-light);
+
+ 
+ 
+    /* variables de table */
+    --color-background-light: #f4f4f4;
+    --color-background-dark: #333;
+    --color-background-hover: #e2e2e2;
+    --color-text-light: #fff;
+    --color-text-dark: #333;
+    --color-accent-green: green;
+    --color-accent-yellow: yellow;
+    --color-accent-blue: blue;
+    --color-accent-red: red;
+    --color-accent-purple: purple;
+    --color-shadow-dark: black;
+    --color-shadow-light: rgba(0, 0, 0, 0.1);
+    --border-color-light: #ddd;
+    --border-radius: 6px;
+    --box-shadow: 0 2px 10px var(--color-shadow-light);
+    --font-size-small: 7px;
+
+
+
+
+    /* variables de tabs */
+    --color-background-light: #f9f7e7;
+    --color-background-dark: #333;
+    --color-background-hover: #ddd;
+    --color-text-dark: #333;
+    --color-text-light: #fff;
+    --color-accent-yellow: yellow;
+    --color-accent-green: green;
+    --color-accent-purple: purple;
+    --color-accent-red: #e74c3c;
+    --color-error-background: #fce4e4;
+    --color-shadow-green: green;
+    --color-shadow-purple: purple;
+    --color-box-shadow: rgba(0, 0, 0, 0.1);
+    --border-color-light: #ccc;
+    --border-color-dark: #333;
+    --border-radius: 2px;
+    --font-size-small: 12px;
+    --font-size-large: 30px;
+    --font-size-xlarge: 20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

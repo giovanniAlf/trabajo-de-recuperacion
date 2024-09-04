@@ -1,27 +1,4 @@
-:root {
-    --alert-padding: 15px;
-    --alert-border-radius: 5px;
-    --alert-margin-bottom: 20px;
-    --alert-font-size: 20px;
-    --alert-transition-duration: 0.3s;
-
-   /* coloriness */
-    --alert-color-info: #007BFF;
-    --alert-bg-info: #e7f0ff;
-    --alert-color-success: #155724;
-    --alert-bg-success: #d4edda;
-    --alert-border-color-info: #007BFF;
-    --alert-border-color-success: #c3e6cb;
-    --alert-color-close-btn: #333;
-/* colores pero de los hover profe jhon */
-    --alert-bg-red: rgb(138, 8, 8);
-    --alert-bg-brown-hover: #856404;
-    --alert-bg-purple: purple;
-    --alert-bg-purple-hover: #5700f9;
-    --alert-bg-lightblue: rgb(0, 136, 255);
-    --alert-bg-lightblue-hover: #8dd6e0;
-    --alert-color-red-hover: rgb(255, 0, 0);
-}
+@import url('variables_globales.css');
 
 .alert {
     display: flex;

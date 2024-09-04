@@ -1,15 +1,4 @@
-:root {
-    --pagination-padding: 10px;
-    --pagination-margin: 20px 0;
-    --item-padding: 10px 15px;
-    --item-margin: 0 5px;
-    --border-color: #ddd;
-    --border-radius: 5px;
-    --text-color: #333;
-    --hover-bg-color: #f0f0f0;
-    --active-bg-color: #666;
-    --active-text-color: #fff;
-}
+@import url('variables_globales.css');
 
 .pagination {
     display: flex;

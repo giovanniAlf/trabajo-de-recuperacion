@@ -1,24 +1,4 @@
-:root {
-
-    /* variables en general */
-    --color-background-light: #f4f4f4;
-    --color-background-dark: #333;
-    --color-background-hover: #e2e2e2;
-    --color-text-light: #fff;
-    --color-text-dark: #333;
-    --color-accent-green: green;
-    --color-accent-yellow: yellow;
-    --color-accent-blue: blue;
-    --color-accent-red: red;
-    --color-accent-purple: purple;
-    --color-shadow-dark: black;
-    --color-shadow-light: rgba(0, 0, 0, 0.1);
-    --border-color-light: #ddd;
-    --border-radius: 6px;
-    --box-shadow: 0 2px 10px var(--color-shadow-light);
-    --font-size-small: 7px;
-}
-
+@import url('variables_globales.css');
 .table {
     width: 100%;
     border-collapse: collapse;

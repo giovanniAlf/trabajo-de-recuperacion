@@ -1,28 +1,4 @@
-:root {
-
-
-    /* colores y algunos tamaños */
-    --color-background-light: #f9f7e7;
-    --color-background-dark: #333;
-    --color-background-hover: #ddd;
-    --color-text-dark: #333;
-    --color-text-light: #fff;
-    --color-accent-yellow: yellow;
-    --color-accent-green: green;
-    --color-accent-purple: purple;
-    --color-accent-red: #e74c3c;
-    --color-error-background: #fce4e4;
-    --color-shadow-green: green;
-    --color-shadow-purple: purple;
-    --color-box-shadow: rgba(0, 0, 0, 0.1);
-    --border-color-light: #ccc;
-    --border-color-dark: #333;
-    --border-radius: 2px;
-    --font-size-small: 12px;
-    --font-size-large: 30px;
-    --font-size-xlarge: 20px;
-}
-
+@import url('variables_globales.css');
 body {
     font-family: Arial, sans-serif;
     background-color: var(--color-background-light);

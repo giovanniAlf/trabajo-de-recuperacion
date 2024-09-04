@@ -1,28 +1,4 @@
-:root {
-    /* tamaños varios */
-    --gap-spacing: 10px;
-    --padding-container: 20px;
-    --padding-notification: 15px;
-    --border-radius: 5px;
-    --font-size-icon: 1.5em;
-    --font-size-notification: 1em;
-
-    /* algunos colores que se utilizan*/
-    --color-white: #fff;
-    --color-black: #000;
-    --color-blue: blue;
-    --color-green: #28a745;
-    --color-red: red;
-    --color-brown: brown;
-    --color-violet: violet;
-    --color-purple: purple;
-    --color-yellow: yellow;
-    --color-transparent: transparent;
-
-    /* algunas sombras*/
-    --shadow-black: 50px 10px 5px black;
-    --shadow-orange: 50px 10px 5px orange;
-}
+@import url('variables_globales.css');
 
 .notification-container {
     display: flex;

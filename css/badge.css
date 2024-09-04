@@ -1,43 +1,4 @@
-:root {
-
-    --badge-padding: 10px;
-    --badge-bg-color: #eee;
-    --badge-border-radius: 12px;
-    --badge-font-size: 1.5em;
-
-
-    --badge-count-bg-color: #ff4d4d;
-    --badge-count-color: #fff;
-    --badge-count-border-radius: 50%;
-    --badge-count-padding: 5px 10px;
-    --badge-count-font-size: 0.9em;
-    --badge-count-position-top: -5px;
-    --badge-count-position-right: -5px;
-    --badge-count-min-width: 20px;
-
-  
-    --badge-warning-bg-color: #f39c12;
-    --badge-success-bg-color: #2ecc71;
-    --badge-red-bg-color: red;
-    --badge-transparent-bg-color: transparent;
-    --badge-blue-bg-color: blue;
-    --badge-yellow-bg-color: yellow;
-    --badge-green-bg-color: green;
-    --badge-black-shadow: 5px 5px 5px black;
-    --badge-blue-shadow: 5px 5px 5px blue;
-
-  
-    --badge-hover-font-size-big: 60px;
-    --badge-hover-font-size-small: 20px;
-    --badge-hover-font-size-smaller: 25px;
-    --badge-hover-font-size-larger: 50px;
-    --badge-hover-font-color: blue;
-    --badge-font-family-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --badge-font-family-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-    
-    --badge-transition-duration: 3s;
-}
+@import url('variables_globales.css');
 
 .badge {
     position: relative;

@@ -1,19 +1,4 @@
-:root {
-    /* General Styles */
-    --padding-navbar: 10px;
-    --padding-link: 10px 20px;
-    --font-size-link: 16px;
-    --transition-fast: 0.3s;
-
-    /* Colors */
-    --color-white: #fff;
-    --color-black: black;
-    --color-blue: blue;
-    --color-yellow: yellow;
-    --color-green: green;
-    --color-transp: transparent;
-}
-
+@import url('variables_globales.css');
 .navbar {
     max-width: 100%;
     margin: 0 auto;
