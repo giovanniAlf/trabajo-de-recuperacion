@@ -47,24 +47,17 @@ text-align: end;
 }
 
 .card__header-base{
-    background-color: #00ffbf;
+   
     padding: var(--card-padding);
 }
 
-.card__header-base:hover {
-    background-color: var(--color-hover-green);
-    transition: var(--transition-duration-short);
-    text-align: end;
-}
 
 .card__body-base {
     background-color: var(--color-white);
 }
 
 .card__body-base:hover {
-    background-color: var(--color-aqua);
-    color: var(--color-black);
-    transition: var(--transition-duration-long);
+
 }
 
 .card__header-lorem, .card__footer-lorem {
@@ -148,10 +141,7 @@ text-align: end;
     color: var(--color-light-green);
 }
 
-.card--base {
-    border-left: 4px solid var(--color-primary);
-    background-color: var(--color-black);
-}
+
 
 .card--lorem {
     background-color: var(--color-blue);
@@ -173,4 +163,11 @@ text-align: end;
 
 background-color: var(--color-white);
 
+}
+.card__footer-base{
+
+    color: black;
+    background-color: white;
+    text-align: start;
+    text-decoration: none;
 }

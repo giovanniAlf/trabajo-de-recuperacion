@@ -112,3 +112,10 @@ input.error {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: 4s;
 }
+.gruesa{
+
+    height: 5px;
+    
+    background-color: black;
+
+}

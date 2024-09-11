@@ -26,12 +26,19 @@ body {
     transition: transform 0.3s;
     color: var(--color-text-light);
 }
+.post_mensaje{
+
+    background-color: var(--color-text-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+    
 
 .post:hover {
     transform: scale(1.05);
 }
 
-/* Post Style Variants */
+
 .post_mensaje-fondo-negro-shadow-blue-border-radius-6px-hover-fondo-azul-color-naranja {
     background-color: var(--color-shadow-dark);
     border-radius: var(--border-radius);
