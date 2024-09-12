@@ -24,7 +24,7 @@
     background-color: var(--color-black);
 }
 
-.navbar--amarilla {
+.navbar__body--amarilla {
     background-color: var(--color-yellow);
 }
 
@@ -32,7 +32,7 @@
     background-color: var(--color-blue);
 }
 
-.navbar--azul {
+.navbar__body--azul {
     background-color: var(--color-blue);
 }
 
@@ -44,7 +44,7 @@
     background-color: var(--color-black);
 }
 
-.navbar--verde {
+.navbar__body--verde {
     background-color: var(--color-transp);
 }
 
@@ -53,7 +53,7 @@
     text-decoration: underline;
 }
 
-.navbar--negra {
+.navbar__body--negra {
     background-color: var(--color-black);
 }
 

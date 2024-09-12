@@ -17,17 +17,17 @@
     font-family: "Inter", sans-serif;
 }
 
-.accordion--normal {
+.accordion__normal {
     background-color: var(--negro);
     color: var(--blanco);
 }
 
-.accordion--morado {
+.accordion__morado {
     border: 2px solid var(--color_morado_borde);
     background-color: var(--color_morado_fondo);
 }
 
-.accordion--morado .accordion__title {
+.accordion__morado .accordion__title {
     background-color: var(--color_morado_title_bg);
     color: var(--color_morado_title_text);
     border-bottom: 1px solid var(--color_morado_borde);
@@ -35,7 +35,7 @@
     color: var(--blanco);
 }
 
-.accordion--morado .accordion__title:hover {
+.accordion__morado .accordion__title:hover {
     background-color: var(--color_morado_hover_bg);
     color: var(--color_morado_hover_text);
     display: flex;
@@ -43,49 +43,49 @@
     transition: color 2s ease, border-bottom-color 0.3s ease;
 }
 
-.accordion--morado .accordion__content {
+.accordion__morado .accordion__content {
     background-color: var(--color_morado_content_bg);
     align-items: self-end;
     justify-content: space-around;
 }
 
-.accordion--verde {
+.accordion__verde {
     border: 2px solid var(--color_verde_borde);
     background-color: var(--color_verde_fondo);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.accordion--verde .accordion__title {
+.accordion__verde .accordion__title {
     background-color: var(--color_verde_title_bg);
     color: var(--color_verde_title_text);
     border-bottom: 1px solid var(--color_verde_borde);
     text-transform: uppercase;
 }
 
-.accordion--verde .accordion__title:hover {
+.accordion__verde .accordion__title:hover {
     background-color: var(--color2);
     color: var(--blanco);
     font-weight: bold;
 }
 
-.accordion--verde .accordion__content {
+.accordion__verde .accordion__content {
     background-color: var(--color_verde_content_bg);
     border-left: 3px solid var(--color_verde_borde);
 }
 
-.accordion--azul {
+.accordion__azul {
     border: 2px solid var(--color_azul_borde);
     background-color: var(--color_azul_fondo);
 }
 
-.accordion--azul .accordion__title {
+.accordion__azul .accordion__title {
     background-color: var(--color_azul_title_bg);
     color: var(--color_azul_title_text);
     border-bottom: 1px solid var(--color_azul_borde);
     border-radius: var(--esquina_redondeada) var(--esquina_redondeada) 0 0;
 }
 
-.accordion--azul .accordion__title:hover {
+.accordion__azul .accordion__title:hover {
     background-color: var(--color_azul_hover_bg);
     color: var(--color_azul_hover_text);
     font-weight: bolder;
@@ -95,24 +95,24 @@
     height: 100%; 
 }
 
-.accordion--azul .accordion__content {
+.accordion__azul .accordion__content {
     background-color: var(--color_azul_content_bg);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.accordion--rojo {
+.accordion__rojo {
     border: 2px solid var(--color_rojo_borde);
     background-color: var(--color_rojo_fondo);
 }
 
-.accordion--rojo .accordion__title {
+.accordion__rojo .accordion__title {
     background-color: var(--color_rojo_title_bg);
     color: var(--color_rojo_title_text);
     border-bottom: 1px solid var(--color_rojo_borde);
     font-style: italic;
 }
 
-.accordion--rojo .accordion__title:hover {
+.accordion__rojo .accordion__title:hover {
     background-color: var(--color_rojo_hover_bg);
     color: var(--color_rojo_hover_text);
     text-decoration: underline;
@@ -121,7 +121,7 @@
     justify-content: flex-end;
 }
 
-.accordion--rojo .accordion__content {
+.accordion__rojo .accordion__content {
     background-color: var(--color_rojo_content_bg);
     display: flex;
     align-items: baseline;
