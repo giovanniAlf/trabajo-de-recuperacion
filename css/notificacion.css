@@ -32,76 +32,76 @@
     margin: 0;
 }
 
-.notification--base {
+.notification__base {
     background-color: var(--color-green);
 }
 
-.notification--Hola-azul {
+.notification__Hola-azul {
     background-color: var(--color-blue);
 }
 
-.notification__message-hover-shadownegro-letraverde:hover {
+.notification__message--hover-shadownegro-letraverde:hover {
     box-shadow: var(--shadow-black);
     color: var(--color-green);
 }
 
-.notification--Chao {
+.notification__Chao--fondorojo {
     background-color: var(--color-red);
 }
 
-.notification__icon-underline {
+.notification__icon--underline {
     text-decoration: underline;
 }
 
-.notification__message-hover-fondovioleta-overline-letraazul:hover {
+.notification__message--hover-fondovioleta-overline-letraazul:hover {
     background-color: var(--color-violet);
     text-decoration: overline;
     color: var(--color-blue);
 }
 
-.notification--Nosvemos-brown {
+.notification__Nosvemos--brown {
     background-color: var(--color-brown);
 }
 
-.notification__icon-hover-letra-negra-fondo-blanco:hover {
+.notification__icon--hover-letra-negra-fondo-blanco:hover {
     color: var(--color-black);
     background-color: var(--color-white);
 }
 
-.notification__message-underline-hover-overline-letra-verde-fondo-morado {
+.notification__message--underline-hover-overline-letra-verde-fondo-morado {
     text-decoration: underline;
 }
 
-.notification__message-underline-hover-overline-letra-verde-fondo-morado:hover {
+.notification__message--underline-hover-overline-letra-verde-fondo-morado:hover {
     text-decoration: overline;
     color: var(--color-green);
     background-color: var(--color-purple);
 }
 
-.notification--missu-no-fondo {
+.notification__missu--nofondo {
     background-color: var(--color-transparent);
 }
 
-.notification__icon-hover-overline-hover-fondo-verde:hover {
+.notification__icon--hover-overline-hover-fondo-verde:hover {
     text-decoration: overline;
     background-color: var(--color-green);
 }
 
-.notification__message-hover-fondo-negro-letra-amarillo:hover {
+.notification__message--hover-fondo-negro-letra-amarillo:hover {
     background-color: var(--color-black);
     color: var(--color-yellow);
 }
 
-.notification--hateu-fondo-verde-shadow-naranja {
+.notification__hateu--fondo-verde-shadow-naranja {
     background-color: var(--color-green);
     box-shadow: var(--shadow-orange);
 }
 
-.notification__icon-hover-transition-fondo-negro:hover {
+.notification__icon--hover-transition-fondo-negro:hover {
     background-color: var(--color-black);
     transition: 5s;
 }
 
-.notification__message-hover-letra-azul:hover {
+.notification__message--hover-letra-azul:hover {
     color: var(--color-blue);
 }

@@ -26,7 +26,7 @@ body {
     transition: transform 0.3s;
     color: var(--color-text-light);
 }
-.post_mensaje{
+.post__mensaje{
 
     background-color: var(--color-text-light);
     border-radius: var(--border-radius);
@@ -39,18 +39,18 @@ body {
 }
 
 
-.post_mensaje-fondo-negro-shadow-blue-border-radius-6px-hover-fondo-azul-color-naranja {
+.post__mensaje-fondo-negro-shadow-blue-border-radius-6px-hover-fondo-azul-color-naranja {
     background-color: var(--color-shadow-dark);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
 
-.post_mensaje-fondo-negro-shadow-blue-border-radius-6px-hover-fondo-azul-color-naranja:hover {
+.post__mensaje-fondo-negro-shadow-blue-border-radius-6px-hover-fondo-azul-color-naranja:hover {
     background-color: var(--color-accent-blue);
     color: var(--color-accent-orange);
 }
 
-.post_mensaje-fondo-azul-underline-end-color-naranja-hover-fondo-transparente-color-verde-shadow-negro {
+.post__mensaje-fondo-azul-underline-end-color-naranja-hover-fondo-transparente-color-verde-shadow-negro {
     background-color: var(--color-accent-blue);
     color: var(--color-accent-orange);
     text-decoration: underline;
@@ -59,13 +59,13 @@ body {
     box-shadow: var(--box-shadow);
 }
 
-.post_mensaje-fondo-azul-underline-end-color-naranja-hover-fondo-transparente-color-verde-shadow-negro:hover {
+.post__mensaje-fondo-azul-underline-end-color-naranja-hover-fondo-transparente-color-verde-shadow-negro:hover {
     background-color: transparent;
     color: var(--color-accent-green);
     box-shadow: 30px 5px 5px var(--color-shadow-dark);
 }
 
-.post_mensaje-fondo-transparente-shadow-verde-hover-fondo-rojo-color-negro-fontsize-5px {
+.post__mensaje-fondo-transparente-shadow-verde-hover-fondo-rojo-color-negro-fontsize-5px {
     background-color: transparent;
     color: var(--color-accent-orange);
     box-shadow: 30px 5px 5px var(--color-accent-green);
@@ -74,13 +74,13 @@ body {
     transition: transform 0.3s;
 }
 
-.post_mensaje-fondo-transparente-shadow-verde-hover-fondo-rojo-color-negro-fontsize-5px:hover {
+.post__mensaje-fondo-transparente-shadow-verde-hover-fondo-rojo-color-negro-fontsize-5px:hover {
     background-color: var(--color-accent-red);
     color: var(--color-text-dark);
     font-size: 5px;
 }
 
-.post_mensaje-fondo-negro-color-morado-center-hover-transition-fondo-morado-color-morado-underline-font-family {
+.post__mensaje-fondo-negro-color-morado-center-hover-transition-fondo-morado-color-morado-underline-font-family {
     background-color: var(--color-shadow-dark);
     color: var(--color-accent-purple);
     text-align: center;
@@ -89,7 +89,7 @@ body {
     border-radius: var(--border-radius);
 }
 
-.post_mensaje-fondo-negro-color-morado-center-hover-transition-fondo-morado-color-morado-underline-font-family:hover {
+.post__mensaje-fondo-negro-color-morado-center-hover-transition-fondo-morado-color-morado-underline-font-family:hover {
     background-color: var(--color-accent-purple);
     color: var(--color-text-dark);
     font-family: 'Times New Roman', Times, serif;

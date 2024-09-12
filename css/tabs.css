@@ -75,37 +75,36 @@ input.error {
     color: #666;
 }
 
-/* Form Group Style Variants */
-.form_group-fondo-negro-color-blanco-shadow-verder-hover-fondo-transparente {
+.form__group-fondo-negro-color-blanco-shadow-verder-hover-fondo-transparente {
     background-color: black;
     color: white;
     box-shadow: 5px 5px 5px var(--color-accent-green);
 }
 
-.form_group-fondo-negro-color-blanco-shadow-verder-hover-fondo-transparente:hover {
+.form__group-fondo-negro-color-blanco-shadow-verder-hover-fondo-transparente:hover {
     background-color: transparent;
 }
 
-.form_group-fontfamilly-fondo-verde {
+.form__group-fontfamilly-fondo-verde {
     font-family: cursive;
     background-color: var(--color-accent-green);
 }
 
-.form_group-hover-amarillo-transition-shadow-morado-fontsize:hover {
+.form__group-hover-amarillo-transition-shadow-morado-fontsize:hover {
     background-color: var(--color-accent-yellow);
     box-shadow: 0 0 10px var(--color-shadow-purple);
     font-size: var(--font-size-xlarge);
     transition: 4s;
 }
 
-.form_group-fontsizeMayor-fontfamily-color-purprle-fondo-negro-hover-transition-fondo-transparente-fontsizemenor-end-fontfamily {
+.form__group-fontsizeMayor-fontfamily-color-purprle-fondo-negro-hover-transition-fondo-transparente-fontsizemenor-end-fontfamily {
     font-family: fantasy;
     font-size: var(--font-size-large);
     color: var(--color-accent-purple);
     background-color: black;
 }
 
-.form_group-fontsizeMayor-fontfamily-color-purprle-fondo-negro-hover-transition-fondo-transparente-fontsizemenor-end-fontfamily:hover {
+.form__group-fontsizeMayor-fontfamily-color-purprle-fondo-negro-hover-transition-fondo-transparente-fontsizemenor-end-fontfamily:hover {
     background-color: transparent;
     font-size: 10px;
     text-align: end;
